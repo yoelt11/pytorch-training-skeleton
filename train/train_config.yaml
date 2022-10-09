@@ -1,0 +1,18 @@
+#---- MODEL PARAMETERS
+MODEL_PARAM: # input in the same order as class initialization
+  BATCH_SIZE: 125
+  INPUT_DIM: 2
+  HIDDEN_DIM: 10
+  NUM_CLASSES: 256
+#---- MODEL CONFIG
+MODEL_CFG:
+  DS_PATH: '../dataset/output/dataset'
+  TB_PATH: 'logs/model_run_01'
+  TB_COMMENT: '_our_ds'
+  MODEL_OUT_PATH: 'trained_models/model.pt'
+
+#---- TRAINING PARAMETERS
+TRAIN_PARAM:
+  LEARNING_RATE: .001
+  WEIGHT_DECAY: .01
+  EPOCHS: 300 
